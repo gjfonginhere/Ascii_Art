@@ -9,7 +9,7 @@ def pTov(inputfile,outputfile):
     # 设置路径
 
     for filename in os.listdir(inputfile):
-        if filename.endswith('.jpg'):
+        if filename.endswith('.jpg') or filename.endswith('.png'):
             input_path = os.path.join(inputfile,filename)
             processed_image = ascii_art(input_path)
             output_path = os.path.join(outputfile,filename)
